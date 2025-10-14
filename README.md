@@ -1,49 +1,79 @@
-# Kafka  Project Final — DB → Kafka → Consume (Streamlit)
+🧪 Proyecto Final — Kafka + SQLite + Streamlit
 
-Proyecto mínimo para entregar un demo funcional:
-- SQLite con tabla `customers` y datos ejemplo.
-- Publicación de filas como JSON a un tópico Kafka.
-- Consumo rápido para verificar los mensajes.
+Este proyecto demuestra una integración completa entre Kafka, SQLite y Streamlit para la publicación y consumo de datos en tiempo real.
 
-## 1) Requisitos
-- WSL Ubuntu / Linux / macOS / Windows con Python 3.9+
-- Docker/Docker Compose (o Podman) para Kafka
+🎯 Objetivo
 
-## 2) Levantar Kafka 
-```bash
-docker-compose up -d
-```
-```bash
-##levantar kafka con podman-compose
+Crear una base de datos local SQLite con datos de ejemplo (customers).
+
+Publicar las filas como mensajes JSON en un tópico de Kafka.
+
+Consumir y visualizar los mensajes desde una interfaz web hecha en Streamlit.
+
+🏗️ Estructura del proyecto
+├── docker-compose.yml / podman-compose.yml   # Contenedores de Kafka, Zookeeper y Kafdrop
+├── requirements.txt                          # Librerías necesarias
+├── src/
+│   ├── create_db.py                          # Crea la base de datos sample.db
+│   └── app_streamlit_min.py                  # Interfaz Streamlit con publicación/consumo
+├── capturas/                                 # Evidencias del funcionamiento
+└── README.md                                 # Este archivo
+
+⚙️ Requisitos previos
+
+Python 3.9+ o superior
+
+WSL Ubuntu (o Linux nativo)
+
+Docker o Podman instalado y en ejecución
+
+🚀 Pasos de ejecución
+1️⃣ Levantar Kafka
 podman-compose up -d
-```
-```bash
-#listarlos
-podman ps
-```
-## 3) Preparar entorno Python
-```bash
+
+2️⃣ Crear entorno Python
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
-```bash
-##Comprobar entorno python
-pip list
-```
 
-## 4) Crear BD de ejemplo
-```bash
-python create_db.py
-```
+3️⃣ Crear base de datos de ejemplo
+python src/create_db.py
 
-## 5) Ejecutar el panel
-```bash
-streamlit run app_streamlit.py
-```
+4️⃣ Ejecutar la interfaz Streamlit
+streamlit run src/app_streamlit_min.py
 
-- Pestaña **DB → Kafka**: crea la BD y publica al tópico (por defecto `customers_json`).
-- Pestaña **Consumidor rápido**: lee mensajes del tópico para confirmar.
+5️⃣ Visualizar
 
-## 6) Notas
-- Cambia `Bootstrap`, `Topic` y ruta de BD desde la barra lateral.
+Abre en el navegador:
+👉 http://localhost:8501
+
+En la pestaña DB → Kafka: publica los datos.
+
+En Consumidor rápido: verifica los mensajes desde el tópico customers_json.
+
+🧩 Tecnologías usadas
+
+Kafka / Zookeeper (Confluent 7.5.0)
+
+SQLite3
+
+Streamlit 1.37+
+
+Python 3.12 (WSL Ubuntu)
+
+📸 Capturas incluidas
+
+Las capturas dentro de la carpeta /capturas muestran:
+
+Interfaz Streamlit corriendo localmente.
+
+Confirmación de Kafka activo en Podman.
+
+Publicación de datos hacia el tópico.
+
+Lectura de mensajes desde el consumidor.
+
+💬 Autor(A)
+Diana Carolina Avilez Avilez
+Proyecto académico — Taller Final de Kafka
+GitHub: @davileza23
