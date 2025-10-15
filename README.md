@@ -26,6 +26,7 @@ WSL Ubuntu (o Linux nativo)
 Docker o Podman instalado y en ejecución
 
 🚀 Pasos de ejecución
+
 1️⃣ Levantar Kafka
 podman-compose up -d
 
