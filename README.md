@@ -70,5 +70,5 @@ Lectura de mensajes desde el consumidor.
 💬 Responsable: 
 
 Diana Carolina Avilez Avilez
-Proyecto académico — Taller Final de Kafka
+Taller Final de Kafka Universidad Santo Tomás/DIAN
 GitHub: @davileza23
