@@ -67,7 +67,8 @@ Publicación de datos hacia el tópico.
 Lectura de mensajes desde el consumidor.
 
 
-💬 Responsable
+💬 Responsable: 
+
 Diana Carolina Avilez Avilez
 Proyecto académico — Taller Final de Kafka
 GitHub: @davileza23
