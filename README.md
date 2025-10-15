@@ -22,9 +22,7 @@ Consumir y visualizar los mensajes desde una interfaz web hecha en Streamlit.
 ⚙️ Requisitos previos
 
 Python 3.9+ o superior
-
 WSL Ubuntu (o Linux nativo)
-
 Docker o Podman instalado y en ejecución
 
 🚀 Pasos de ejecución
@@ -42,39 +40,33 @@ python src/create_db.py
 4️⃣ Ejecutar la interfaz Streamlit
 streamlit run src/app_streamlit_min.py
 
+
 5️⃣ Visualizar
 
-Abre en el navegador:
-👉 http://localhost:8501
-
+Abrir en el navegador:
+👉 http://172.23.164.123:8501
 En la pestaña DB → Kafka: publica los datos.
-
 En Consumidor rápido: verifica los mensajes desde el tópico customers_json.
+
 
 🧩 Tecnologías usadas
 
 Kafka / Zookeeper (Confluent 7.5.0)
-
 SQLite3
-
 Streamlit 1.37+
-
 Python 3.12 (WSL Ubuntu)
+
 
 📸 Capturas incluidas
 
 Las capturas dentro de la carpeta /capturas muestran:
-
 Interfaz Streamlit corriendo localmente.
-
 Confirmación de Kafka activo en Podman.
-
 Publicación de datos hacia el tópico.
-
 Lectura de mensajes desde el consumidor.
 
 
-💬 Autor(A)
+💬 Responsable
 Diana Carolina Avilez Avilez
 Proyecto académico — Taller Final de Kafka
 GitHub: @davileza23
