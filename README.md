@@ -69,12 +69,12 @@ Diana Carolina Avilez Avilez
 Taller Final de Kafka Universidad Santo Tomás/DIAN
 GitHub: @davileza23
 ```
-## Authors
+## Autor(a)
 
 - [@davileza23](https://github.com/davileza23/TallerFinalKAFKA)
 
 
-## Documentation
+## Documentación
 
 [Evidencias ejecución proyecto final](https://github.com/davileza23/TallerFinalKAFKA/blob/main/kafka_proy_final/capturas/ProyectoFinalKafka.docx)
 
