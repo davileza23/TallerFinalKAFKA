@@ -22,7 +22,7 @@ kafka_proy_final/
 │   ├── app_streamlit.py         # Interfaz principal (DB → Kafka → Consumo)
 │   ├── create_db.py             # Script para crear sample.db con 3 filas
 │   └── sample.db                # Base de datos SQLite generada
-└── capturas/                    # Evidencias del funcionamiento
+└── capturas/                    # Evidencias del funcionamiento - archivo word
 
 ```
 
