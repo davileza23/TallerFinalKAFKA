@@ -1,0 +1,25 @@
+
+# Detener los contenedores levantados por el compose
+podman-compose down
+
+# Forzar eliminación de contenedores que aún estén vivos (por si acaso)
+podman rm -f kafka kafdrop zookeeper
+
+# Eliminar cualquier volumen asociado (logs, datos corruptos, etc.)
+podman volume prune -f
+
+# (Opcional) Limpiar imágenes huérfanas
+podman image prune -f
+
+
+# Subir contenedores
+podman-compose up -d
+
+
+#buscar ip interna de kafka
+
+PS D:\VARIOS_KAFKA\kafka_proy_final> podman inspect kafka | Select-String "IPAddress"
+
+               "IPAddress": "",
+                         "IPAddress": "10.89.2.3",
+
