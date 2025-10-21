@@ -19,7 +19,7 @@ services:
     environment:
       KAFKA_BROKER_ID: 1                     # Identificador único del broker
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181 # Dirección de Zookeeper
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT:// 172.23.164.123:9092,PLAINTEXT_INTERNAL://kafka:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://172.23.164.123:9092,PLAINTEXT_INTERNAL://kafka:29092
       # PLAINTEXT -> conexión externa desde tu máquina
       # PLAINTEXT_INTERNAL -> conexión interna entre contenedores
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
