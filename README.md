@@ -1,15 +1,12 @@
 🧪 Proyecto Final — Kafka + SQLite + Streamlit
 
-Este proyecto demuestra una integración completa entre Kafka, SQLite y Streamlit para la publicación y consumo de datos en tiempo real.
+Aplicación (py) que permite visualizar, enviar y consumir mensajes en tiempo real desde Apache Kafka, utilizando una base de datos SQLite como fuente de datos.
+Incluye un módulo de notificación por correo que envía los resultados del consumo directamente al usuario.
+
 
 
 🎯 Objetivo
-
-Crear una base de datos local SQLite con datos de ejemplo (customers).
-
-Publicar las filas como mensajes JSON en un tópico de Kafka.
-
-Consumir y visualizar los mensajes desde una interfaz web hecha en Streamlit.
+Facilitar la comprensión y observación del funcionamiento de Kafka como sistema de mensajería distribuida, ofreciendo una herramienta práctica y educativa para monitorear el flujo de información entre productores y consumidores en tiempo real.
 
 🏗️ Estructura del proyecto 
 ```
