@@ -6,6 +6,7 @@ Incluye un módulo de notificación por correo que envía los resultados del con
 
 
 🎯 Objetivo
+
 Facilitar la comprensión y observación del funcionamiento de Kafka como sistema de mensajería distribuida, ofreciendo una herramienta práctica y educativa para monitorear el flujo de información entre productores y consumidores en tiempo real.
 
 🏗️ Estructura del proyecto 
