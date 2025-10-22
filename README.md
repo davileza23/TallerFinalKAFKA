@@ -58,7 +58,7 @@ Kafka / Zookeeper /kafdrop (Confluent 7.5.0) SQLite3 Streamlit 1.37+ Python 3.12
 
 📸 Evidencias
 
-Las capturas se encuentran dentro de la carpeta /capturas del proyecto (kafka_proy_final) esta alojado un documento de word que muestra el paso a paso de actividades realizadas, allí se evidencian la Interfaz Streamlit corriendo localmente. Confirmación de Kafka activo en Podman. Publicación de datos hacia el tópico y Lectura de mensajes desde el consumidor.
+Las capturas se encuentran dentro de la carpeta /capturas del proyecto (kafka_proy_final) esta alojado un documento de word que muestra el paso a paso de actividades realizadas, allí se evidencian la Interfaz Streamlit corriendo localmente. Confirmación de Kafka activo en Podman. Publicación de datos hacia el tópico,  Lectura de mensajes desde el consumidor y notificación al usuario de los mensajes recibidos.
 Adicionalmente en esta misma ruta se encuentra una grabacion del proceso realizado
 
 
