@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ##Comprobar entorno python
 pip list
 ```
-Abrir en el navegador: 👉 http://172.23.164.123:8501 En la pestaña DB → Kafka: publica los datos. En Consumidor rápido: verifica los mensajes desde el tópico customers_json.
+Abrir en el navegador: 👉 http://localhost:8501 En la pestaña DB → Kafka: publica los datos. En Consumidor rápido: verifica los mensajes desde el tópico customers_json.
 
 
 🧩 Tecnologías usadas
